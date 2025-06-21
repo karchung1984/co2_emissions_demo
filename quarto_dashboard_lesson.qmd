@@ -1,0 +1,189 @@
+---
+title: "Gapminder 2007"
+format: dashboard
+theme: superhero
+---
+
+```{python}
+import plotly.express as px
+
+p = px.line(y=[1, 2, 3])
+p
+```
+
+# Page 1
+
+## Row {height="40%"}
+
+### Column {width="30%"}
+
+```{python}
+p
+```
+
+### Column {width="70%"}
+
+```{python}
+p
+```
+
+## Row {height="60%"}
+
+```{python}
+p
+```
+
+# Page 2
+
+## Row {height="30%"}
+
+### Column {width="33%"}
+```{python}
+p
+```
+
+### Column {width="33%"}
+
+```{python}
+p
+```
+### Column {width="34%"}
+
+```{python}
+p
+```
+## Row {height="70%"}
+
+### Column {width="70%"}
+```{python}
+p
+```
+### Column {width="30%"}
+
+```{python}
+p
+```
+
+# Layout
+## Row {height="40%"}
+
+### Column {width="30%"}
+
+```{python}
+p
+```
+
+### Column {width="70%"}
+
+```{python}
+p
+```
+
+## Row {height="60%"}
+
+```{python}
+p
+```
+
+# Tabsets
+
+## Row {height="40%"}
+
+### Column {.tabset width="30%"}
+
+#### Tab 1
+
+```{python}
+p
+```
+#### Tab 2
+
+Hello World
+
+### Column {width="70%"}
+
+```{python}
+p
+```
+
+## Row {.tabset height="60%"}
+
+### Tab 1
+```{python}
+p
+```
+
+### Tab 2
+
+Hello World
+
+# Page 5
+
+## Row {height="20%"}
+
+### Column {width="50%"}
+
+```{python}
+p
+```
+
+### Column {width="50%"}
+
+```{python}
+p
+```
+
+## Row {height="80%"}
+
+### Column {width="70%"}
+```{python}
+p
+```
+
+### COlumn {.tabset width="30"}
+
+#### Tab 1
+
+```{python}
+p
+```
+
+#### Tab 2
+
+Hello World
+
+# Value Boxes
+
+```{python}
+import plotly.express as px
+```
+```{python}
+tips = px.data.tips()
+num_cols = tips.shape[1]
+num_rows = tips.shape[0]
+```
+
+## {height="30%"}
+
+:::{.valuebox title="Columns" color="primary" icon="heart"}
+`{python} num_cols`
+
+Few columns
+:::
+
+:::{.valuebox title="Rows" color="secondary" icon="arrow-down"}
+`{python} num_rows`
+
+Many rows
+:::
+
+:::{.valuebox title="Medium Number" color="#5ba3b6" icon="bar-chart"}
+1
+:::
+
+
+##
+
+```{python}
+p
+```
